@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carusel.Page"
+             StyleId="Page">
+    <ContentPage.Resources>
+        <StyleSheet Source="/style.css"/>
+    </ContentPage.Resources>
+    <StackLayout HorizontalOptions="Fill" VerticalOptions="Start">
+        <Picker x:Name="picker" Margin="130,0,130,0">
+        <Picker.Items>
+            <x:String>Select One</x:String>
+                <x:String>Select Two</x:String>
+                <x:String>Select Three</x:String>
+                <x:String>Select Four</x:String>
+            </Picker.Items>
+        </Picker>
+        <Label/>
+        <Slider x:Name="sliderone" Minimum="0" Maximum="100" MaximumTrackColor="Gray" MinimumTrackColor="Aqua" Margin="0,0,236,0" ThumbColor="white"/>
+        <StackLayout Orientation="Horizontal">
+        <Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal"  Grid.Column="0" Grid.Row="0">
+                    <Slider x:Name="slidertwo" Minimum="0" Maximum="100" MaximumTrackColor="Gray" MinimumTrackColor="Aqua" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            <StackLayout Orientation="Horizontal"  Grid.Column="1" Grid.Row="0">                
+                <Switch IsToggled="True"/>
+                    <Switch/>
+                <RadioButton IsChecked="True"/>
+                <RadioButton/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                    <Slider x:Name="sliderthree" Minimum="0" Maximum="100" MaximumTrackColor="Gray" MinimumTrackColor="Aqua" HorizontalOptions="FillAndExpand"/>                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                    <Switch IsToggled="True"/>
+                <Switch />
+                <CheckBox StyleId="checkbox" IsChecked="True" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+                    <Slider x:Name="sliderfour" Minimum="0" Maximum="100" MaximumTrackColor="Gray" MinimumTrackColor="Aqua" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                    <Switch IsToggled="True"/>
+                <Switch />
+                <CheckBox StyleId="checkbox"/>
+            </StackLayout>
+        </Grid>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Button" StyleId="Buttonone" WidthRequest="170" Margin="10,0,0,0" Clicked="Button_Clicked"/>
+            <Button Text=">" StyleId="Buttonone" WidthRequest="50"/>
+            <Button Text="+" StyleId="Buttonone" WidthRequest="50"/>
+            <Button ImageSource="play.png" Text="" StyleId="Buttonone" WidthRequest="50"/>
+            <Button ImageSource="gal.png" Text="" StyleId="Buttonone" WidthRequest="50"/>
+    </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Button" StyleId="Buttontwo" WidthRequest="170" Margin="10,0,0,0" Clicked="Button_Clicked"/>
+            <Button Text=">" StyleId="Buttontwo" WidthRequest="50"/>
+            <Button Text="+" StyleId="Buttontwo" WidthRequest="50"/>
+            <Button ImageSource="play.png" Text="" StyleId="Buttontwo" WidthRequest="50"/>
+            <Button ImageSource="gal.png" Text="" StyleId="Buttontwo" WidthRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Button" StyleId="Buttonthree" WidthRequest="170" Margin="10,0,0,0" Clicked="Button_Clicked"/>
+            <Button Text=">" StyleId="Buttonthree" WidthRequest="50"/>
+            <Button Text="+" StyleId="Buttonthree" WidthRequest="50"/>
+            <Button ImageSource="play.png" Text="" StyleId="Buttonthree" WidthRequest="50"/>
+            <Button ImageSource="gal.png" Text="" StyleId="Buttonthree" WidthRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Button" StyleId="Buttonfour" WidthRequest="170" Margin="10,0,0,0" Clicked="Button_Clicked"/>
+        <Button Text=">" StyleId="Buttonfour" WidthRequest="50"/>
+        <Button Text="+" StyleId="Buttonfour" WidthRequest="50"/>
+        <Button ImageSource="play.png" Text="" StyleId="Buttonfour" WidthRequest="50"/>
+            <Button ImageSource="gal.png" Text="" StyleId="Buttonfour" WidthRequest="50"/>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>

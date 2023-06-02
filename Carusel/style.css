@@ -1,0 +1,75 @@
+﻿^contentpage {
+    background-color: black;
+}
+#Page {
+    background-color: white;
+}
+#welcome {
+    font-size: 28;
+    font-weight: bold;
+    color: aliceblue;
+}
+#Info {
+    background-color: aqua;    
+}
+#label {
+    font-style: italic;
+}
+switch{
+color:aqua;
+}
+slider{
+    
+}
+entry {
+    margin: 30,0,30,0;
+    background-color: aliceblue;
+}
+
+#Button {
+    margin: 30,0,30,0;
+    color: White;
+    background-color: red;
+}
+#Buttonone {
+    color: White;
+    border-radius: 40;
+    background-color: red;
+    content: '\25BA';
+}
+
+#Buttontwo {
+    border-radius: 40;
+}
+#Buttonthree {
+    color: black;
+    border-width: 1;
+    border-radius: 40;
+    background-color: white;
+    border-color: red;
+}
+#Buttonfour {
+    color: red;
+    border-width: 1;
+    border-radius: 40;
+    background-color: white;
+    border-color: red;
+}
+.checkbox {
+    margin: 30,0,0,0;
+    color: White;
+}
+#checkbox {    
+    color: aqua;
+}
+
+#forgot {
+    margin: 150,0,0,0;
+    font-size: 12;
+    color: aliceblue;
+}
+
+#remember {
+    font-size: 16;
+    color: aliceblue;
+}
